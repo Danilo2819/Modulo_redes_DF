@@ -6,7 +6,170 @@
 <meta name="theme-color" content="#080b12">
 <title>Guía Docente de Redes TDC119</title>
 <style>
-:root{--bg:#080b12;--panel:#111927;--panel2:#0d1522;--sidebar:#0b101a;--line:#243247;--text:#edf4ff;--muted:#8d9bb1;--primary:#6d8cff;--cyan:#39d9ff;--green:#32d583;--orange:#ffb454;--red:#ff647c;--shadow:0 18px 45px #0004;--radius:18px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--text);background:radial-gradient(circle at 80% -10%,#536eff22,transparent 32rem),radial-gradient(circle at 10% 20%,#39d9ff0f,transparent 28rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}button,input{font:inherit}button{transition:.18s ease}.app{display:flex;min-height:100vh}.sidebar{width:292px;position:fixed;inset:0 auto 0 0;z-index:10;overflow:auto;padding:24px 17px;background:linear-gradient(180deg,#0e1420f7,#080b12fa);border-right:1px solid #1b2637;box-shadow:18px 0 50px #0002}.brand{margin:2px 10px 5px;color:#fff;font-size:19px;font-weight:850;letter-spacing:.08em}.brand small{display:block;margin-top:5px;color:var(--muted);font-size:11px;font-weight:500;letter-spacing:0}.search{width:100%;margin:24px 0 20px;padding:12px 14px;color:var(--text);background:#111a29;border:1px solid var(--line);border-radius:12px;outline:0}.search:focus{border-color:var(--primary);box-shadow:0 0 0 4px #6d8cff1f}.nav-title{margin:23px 10px 8px;color:#6f7e98;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.nav button{display:flex;align-items:center;width:100%;min-height:40px;margin:3px 0;padding:10px 12px;color:#aebbd0;text-align:left;background:transparent;border:1px solid transparent;border-radius:11px;cursor:pointer;font-size:13px}.nav button:before{content:"";width:6px;height:6px;margin-right:10px;background:#53647e;border-radius:50%}.nav button:hover,.nav button.active{color:#fff;background:#151f30;border-color:#26354e}.nav button.active{background:linear-gradient(135deg,#6d8cff38,#39d9ff12);box-shadow:inset 3px 0 var(--primary)}.main{width:calc(100% - 292px);max-width:1600px;margin-left:292px;padding:30px clamp(18px,4vw,54px) 60px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:28px}.topbar h1{margin:0;font-size:clamp(23px,3vw,32px);letter-spacing:-.04em}.actions,.toolbar{display:flex;flex-wrap:wrap;gap:9px}.btn,.actions button{padding:10px 15px;color:var(--text);background:#172235;border:1px solid var(--line);border-radius:11px;cursor:pointer;font-size:13px;font-weight:750}.btn:hover,.actions button:hover{background:#20304a;border-color:#3b4f70;transform:translateY(-1px)}.primary{color:#fff!important;background:linear-gradient(135deg,#526ff0,#718cff)!important;border-color:transparent!important;box-shadow:0 8px 20px #526ff03b}.secondary{color:#b9c7ff!important;background:#6d8cff1a!important;border-color:#6d8cff4d!important}.hero{position:relative;overflow:hidden;padding:38px clamp(24px,5vw,50px);background:linear-gradient(115deg,#142042fa,#21367be6 54%,#106884cc);border:1px solid #8099ff40;border-radius:24px;box-shadow:var(--shadow)}.hero:after{content:"";position:absolute;width:260px;height:260px;right:-70px;top:-100px;background:#39d9ff2e;border-radius:50%;filter:blur(5px)}.hero h1{position:relative;z-index:1;margin:0 0 7px;font-size:clamp(28px,5vw,44px);line-height:1.1;letter-spacing:-.06em}.hero p{position:relative;z-index:1;max-width:720px;margin:0;color:#c6d6ff}.stats,.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:20px 0}.grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.stat,.card,.section,.class-head{background:linear-gradient(145deg,#111927fa,#0e1420fa);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 10px 28px #0002}.stat{padding:18px 19px}.stat strong{display:block;color:var(--cyan);font-size:29px;line-height:1.1}.stat span{display:block;margin-top:6px;color:var(--muted);font-size:12px}.card{padding:20px;transition:.2s}.card:hover{transform:translateY(-3px);background:#172235;border-color:#3a4d6c}.card h3{margin:0 0 7px;font-size:17px}.card p{margin:5px 0 17px;color:var(--muted);font-size:14px}.ra1{border-top:3px solid var(--primary)}.ra2{border-top:3px solid var(--green)}.ra3{border-top:3px solid var(--orange)}.section{margin:18px 0;padding:23px}.section h2{margin:0 0 14px;color:#eaf0ff;font-size:21px;letter-spacing:-.025em}.section h3{margin:18px 0 7px;color:#aebeff;font-size:15px}.section p{color:#b1bed0}.class-head{margin-bottom:18px;padding:25px;border-left:4px solid var(--primary)}.class-head h1{margin:0;font-size:clamp(22px,3vw,31px);line-height:1.2;letter-spacing:-.045em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.pill{display:inline-flex;padding:5px 10px;color:#bcc8ff;background:#6d8cff1f;border:1px solid #6d8cff40;border-radius:999px;font-size:11px;font-weight:800}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.steps{counter-reset:step;padding:0;list-style:none}.steps li{position:relative;margin:12px 0;padding:14px 15px 14px 50px;color:#b7c3d5;background:var(--panel2);border:1px solid #1b2637;border-radius:12px}.steps li:before{position:absolute;top:12px;left:13px;display:grid;width:25px;height:25px;place-items:center;color:#fff;background:linear-gradient(135deg,var(--primary),var(--cyan));border-radius:50%;content:counter(step);counter-increment:step;font-size:12px;font-weight:850}.callout{margin:12px 0;padding:14px 16px;color:#c4d2e9;background:#6d8cff17;border:1px solid #6d8cff33;border-left:4px solid var(--primary);border-radius:12px}.good{background:#32d58314;border-color:#32d5833b;border-left-color:var(--green)}.warn{background:#ffb45414;border-color:#ffb4543b;border-left-color:var(--orange)}pre,.diagram{position:relative;overflow:auto;padding:18px;color:#b8f7df;background:#080d16;border:1px solid #1c3040;border-radius:13px;font-family:Consolas,monospace;font-size:12px}.diagram{color:#8cebd2;white-space:pre}.copy{position:absolute;top:9px;right:9px;padding:6px 9px;color:#cbd7eb;background:#1c2b40;border:1px solid #334762;border-radius:7px;cursor:pointer;font-size:10px;font-weight:800}.checklist label{display:block;padding:11px 4px;color:#aebbd0;border-bottom:1px solid #1b2637;cursor:pointer}input[type=checkbox]{width:16px;height:16px;margin-right:9px;vertical-align:-3px;accent-color:var(--primary)}table{width:100%;border-collapse:separate;border-spacing:0;color:#b5c1d2;border:1px solid var(--line);border-radius:12px;overflow:hidden}th,td{padding:12px;text-align:left;border-bottom:1px solid #1b2637}th{color:#dbe5ff;background:#17243a;font-size:12px}tr:last-child td{border-bottom:0}tr:hover td{background:#6d8cff0a}code{padding:2px 5px;color:#8eeed4;background:#0a111d;border-radius:5px;font-family:Consolas,monospace;font-size:.9em}.empty{padding:55px 20px;color:var(--muted);text-align:center}.class-nav{display:flex;justify-content:space-between;gap:12px;margin-top:20px}.student-mode .teacher-only{display:none}::selection{color:#fff;background:#526ff0}@media(max-width:1050px){.sidebar{width:245px}.main{width:calc(100% - 245px);margin-left:245px}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.app{display:block}.sidebar{position:relative;width:100%;border-right:0;border-bottom:1px solid #1b2637}.main{width:100%;margin:0;padding:20px 15px 45px}.topbar{align-items:flex-start;flex-direction:column}.two{grid-template-columns:1fr}.hero{padding:28px 22px}}@media(max-width:470px){.stats{grid-template-columns:1fr 1fr;gap:10px}.stat,.section,.class-head{padding:16px}.class-nav{flex-direction:column}.class-nav button{width:100%}th,td{padding:9px 7px;font-size:12px}}
+:root{
+  --bg:#080b12;--panel:#111927;--panel2:#0d1522;--line:#243247;
+  --text:#edf4ff;--muted:#8d9bb1;--primary:#6d8cff;--cyan:#39d9ff;
+  --green:#32d583;--orange:#ffb454;--shadow:0 10px 28px #0003;--radius:15px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;min-height:100vh;color:var(--text);
+  background:radial-gradient(circle at 80% -10%,#536eff22,transparent 32rem),var(--bg);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.55;
+}
+button,input{font:inherit}
+button{transition:.16s ease}
+button:focus-visible,input:focus-visible{outline:3px solid #6d8cff66;outline-offset:2px}
+.app{min-height:100vh}
+.sidebar{
+  width:280px;position:fixed;inset:0 auto 0 0;z-index:50;overflow-y:auto;
+  padding:18px 13px;background:#0b101af7;border-right:1px solid #1b2637;
+}
+.brand{margin:2px 9px;color:#fff;font-size:18px;font-weight:850;letter-spacing:.07em}
+.brand small{display:block;margin-top:3px;color:var(--muted);font-size:11px;font-weight:500;letter-spacing:0}
+.search{
+  width:100%;margin:18px 0 12px;padding:12px;color:var(--text);
+  background:#111a29;border:1px solid var(--line);border-radius:11px;outline:0;
+}
+.search:focus{border-color:var(--primary);box-shadow:0 0 0 4px #6d8cff1f}
+.nav-title{margin:17px 9px 7px;color:#6f7e98;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.nav button{
+  display:flex;align-items:center;width:100%;min-height:42px;margin:2px 0;padding:9px 10px;
+  color:#aebbd0;text-align:left;background:transparent;border:1px solid transparent;
+  border-radius:10px;cursor:pointer;font-size:13px;
+}
+.nav button:before{content:"";width:6px;height:6px;margin-right:9px;background:#53647e;border-radius:50%;flex:none}
+.nav button:hover,.nav button.active{color:#fff;background:#151f30;border-color:#26354e}
+.nav button.active{box-shadow:inset 3px 0 var(--primary)}
+.main{width:calc(100% - 280px);margin-left:280px;padding:0 clamp(14px,3vw,42px) 50px}
+.topbar{
+  position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;
+  min-height:64px;margin:0 -1px 18px;padding:9px 0;background:#080b12ee;
+  backdrop-filter:blur(12px);border-bottom:1px solid #182335;
+}
+.topbar h1{margin:0;font-size:clamp(20px,3vw,29px);line-height:1.2;letter-spacing:-.04em;flex:1;min-width:0}
+.actions{display:flex;gap:7px;flex-wrap:wrap}
+.btn,.actions button{
+  min-height:42px;padding:9px 13px;color:var(--text);background:#172235;
+  border:1px solid var(--line);border-radius:10px;cursor:pointer;font-size:13px;font-weight:750;
+}
+.primary{color:#fff!important;background:linear-gradient(135deg,#526ff0,#718cff)!important;border-color:transparent!important}
+.secondary{color:#b9c7ff!important;background:#6d8cff1a!important;border-color:#6d8cff4d!important}
+.menu-btn{display:none}
+.hero{
+  position:relative;overflow:hidden;padding:30px clamp(18px,4vw,42px);
+  background:linear-gradient(115deg,#142042fa,#21367be6 54%,#106884cc);
+  border:1px solid #8099ff40;border-radius:19px;box-shadow:var(--shadow);
+}
+.hero h1{margin:0 0 6px;font-size:clamp(27px,5vw,42px);line-height:1.08;letter-spacing:-.06em}
+.hero p{max-width:720px;margin:0;color:#c6d6ff}
+.stats,.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0}
+.grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.stat,.card,.section,.class-head{
+  background:linear-gradient(145deg,#111927fa,#0e1420fa);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 7px 20px #0002;
+}
+.stat{padding:15px}.stat strong{display:block;color:var(--cyan);font-size:26px;line-height:1.1}.stat span{color:var(--muted);font-size:12px}
+.card{padding:17px}.card h3{margin:0 0 6px;font-size:16px}.card p{margin:5px 0 14px;color:var(--muted);font-size:14px}
+.ra1{border-top:3px solid var(--primary)}.ra2{border-top:3px solid var(--green)}.ra3{border-top:3px solid var(--orange)}
+.section{margin:13px 0;padding:18px;min-width:0;overflow:hidden}
+.section h2{margin:0 0 11px;font-size:19px;letter-spacing:-.025em}
+.section h3{margin:16px 0 7px;color:#aebeff;font-size:15px}
+.section p{color:#b1bed0}
+.class-head{padding:19px;margin-bottom:13px;border-left:4px solid var(--primary)}
+.class-head h1{margin:0;font-size:clamp(20px,3vw,29px);line-height:1.2;overflow-wrap:anywhere}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.pill{padding:4px 9px;color:#bcc8ff;background:#6d8cff1f;border:1px solid #6d8cff40;border-radius:999px;font-size:11px;font-weight:800}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.steps{counter-reset:step;padding:0;list-style:none}
+.steps li{position:relative;margin:9px 0;padding:12px 12px 12px 45px;color:#b7c3d5;background:var(--panel2);border:1px solid #1b2637;border-radius:10px}
+.steps li:before{position:absolute;top:10px;left:11px;display:grid;width:23px;height:23px;place-items:center;color:#fff;background:linear-gradient(135deg,var(--primary),var(--cyan));border-radius:50%;content:counter(step);counter-increment:step;font-size:11px;font-weight:850}
+.callout{margin:10px 0;padding:12px 13px;color:#c4d2e9;background:#6d8cff17;border:1px solid #6d8cff33;border-left:4px solid var(--primary);border-radius:10px}
+.good{background:#32d58314;border-color:#32d5833b;border-left-color:var(--green)}
+.teacher-tip{background:#182016;border-color:#315238;border-left-color:var(--green)}
+.teacher-tip h2{color:#b8f0c9}
+pre,.diagram{
+  position:relative;max-width:100%;overflow:auto;margin:9px 0;padding:14px;
+  color:#b8f7df;background:#080d16;border:1px solid #1c3040;border-radius:10px;
+  font-family:Consolas,monospace;font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere;
+}
+.diagram{color:#8cebd2;white-space:pre;overflow-x:auto;overflow-y:hidden}
+.copy{position:absolute;top:7px;right:7px;padding:5px 8px;color:#cbd7eb;background:#1c2b40;border:1px solid #334762;border-radius:7px;cursor:pointer;font-size:10px;font-weight:800}
+.checklist label{display:flex;align-items:flex-start;gap:7px;padding:10px 3px;color:#aebbd0;border-bottom:1px solid #1b2637;cursor:pointer}
+input[type=checkbox]{width:18px;height:18px;margin:1px 0 0;flex:none;accent-color:var(--primary)}
+.table-wrap{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px}
+table{width:100%;border-collapse:separate;border-spacing:0;color:#b5c1d2;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:10px;text-align:left;border-bottom:1px solid #1b2637;vertical-align:top}
+th{color:#dbe5ff;background:#17243a;font-size:12px;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+table pre{min-width:145px;margin:0}
+code{padding:2px 5px;color:#8eeed4;background:#0a111d;border-radius:5px;font-family:Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}
+.empty{padding:45px 18px;color:var(--muted);text-align:center}
+.class-nav{display:flex;justify-content:space-between;gap:9px;margin-top:16px}
+.student-mode .teacher-only{display:none}
+.mobile-overlay{display:none}
+
+@media(max-width:1050px){
+  .sidebar{width:235px}.main{width:calc(100% - 235px);margin-left:235px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .sidebar{
+    width:min(88vw,330px);transform:translateX(-105%);transition:transform .2s ease;
+    box-shadow:18px 0 45px #0008;
+  }
+  body.nav-open .sidebar{transform:translateX(0)}
+  body.nav-open .mobile-overlay{display:block}
+  .mobile-overlay{position:fixed;inset:0;z-index:45;background:#0009}
+  .main{width:100%;margin:0;padding:0 11px 35px}
+  .topbar{
+    margin:0 -11px 14px;padding:9px 11px;min-height:58px;
+  }
+  .topbar h1{font-size:19px}
+  .menu-btn{display:inline-flex;align-items:center;justify-content:center;flex:none;padding:8px 10px}
+  .actions .primary{display:none}
+  .actions .btn{min-height:40px;padding:7px 9px}
+  .hero{padding:23px 17px;border-radius:15px}
+  .hero h1{font-size:28px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .stat{padding:13px}.stat strong{font-size:23px}
+  .grid{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .section{padding:15px;margin:10px 0}
+  .class-head{padding:15px}
+  .class-nav{flex-direction:column}.class-nav .btn{width:100%}
+  .btn{min-height:44px}
+  .nav button{min-height:44px}
+  .table-wrap{margin:0;width:100%}
+  table{min-width:0}
+  th,td{padding:9px 8px;font-size:13px}
+  .table-wrap table{min-width:520px}
+}
+@media(max-width:430px){
+  .topbar h1{font-size:17px}
+  .actions .secondary{font-size:12px}
+  .hero h1{font-size:25px}
+  .stats{gap:7px}.stat span{font-size:11px}
+  .section h2{font-size:18px}
+  .class-head h1{font-size:20px}
+  .meta{gap:5px}.pill{font-size:10px}
+  .steps li{padding-left:42px}
+  pre,.diagram{font-size:11px}
+}
+@media(max-width:340px){
+  .actions .secondary{display:none}
+  .topbar{gap:7px}
+  .topbar h1{font-size:16px}
+}
+@media print{
+  .sidebar,.topbar,.class-nav,.copy,.mobile-overlay{display:none!important}
+  .main{width:100%;margin:0;padding:0}
+  .section,.class-head,.card{box-shadow:none}
+  body{background:#fff;color:#111}
+  .section p,.card p{color:#333}
+}
 </style>
 </head>
 <body>
@@ -18,6 +181,7 @@
 </aside>
 <main class="main">
   <div class="topbar">
+    <button class="btn secondary menu-btn" id="menuBtn" onclick="toggleNav()" aria-label="Abrir menú">☰ Menú</button>
     <h1 id="pageTitle">Inicio</h1>
     <div class="actions">
       <button class="btn secondary" id="modeBtn">Modo estudiante</button>
@@ -53,16 +217,43 @@ function esc(s){return String(s).replace(/[&<>]/g,x=>({'&':'&amp;','<':'&lt;','>
 function code(s){return `<pre><button class="copy" onclick="copyCode(this)">COPIAR</button>${esc(s)}</pre>`}
 function check(text,key){return `<label><input type="checkbox" data-check="${key}">${text}</label>`}
 function baseCode(c){if(c.n===10)return code(`enable\nconfigure terminal\nvlan 10\nname ADMIN\nexit\nvlan 20\nname ALUMNOS\nexit\ninterface fastEthernet 0/1\nswitchport mode access\nswitchport access vlan 10\nexit\ninterface fastEthernet 0/2\nswitchport mode access\nswitchport access vlan 20\nend\nshow vlan brief`);if(c.n===11)return code(`enable\nconfigure terminal\ninterface fastEthernet 0/24\nswitchport mode trunk\nend\nshow interfaces trunk`);if(c.n===4)return code(`enable\nconfigure terminal\ninterface gigabitEthernet 0/0\nip address 192.168.1.1 255.255.255.0\nno shutdown\nexit\ninterface gigabitEthernet 0/1\nip address 192.168.2.1 255.255.255.0\nno shutdown\nend\nshow ip interface brief`);return ''}
-function classPage(c){return `<div class="class-head"><h1>CLASE ${c.n} — ${c.t}</h1><div class="meta"><span class="pill">${c.ra}</span><span class="pill">4 horas</span><span class="pill">Guía paso a paso</span></div><p><b>Objetivo:</b> ${c.o}</p></div><div class="section"><h2>¿Qué aprenderán?</h2><p>${c.c}</p><h2>¿Qué necesito antes de comenzar?</h2><p>${c.m}</p><h2>Preparación del profesor</h2><ol class="steps"><li>Prueba la actividad completa y guarda una copia limpia.</li><li>Prepara equipos, material, proyector y carpeta de evidencias.</li><li>Escribe el objetivo, la topología y la convención de nombres.</li></ol><div class="checklist">${check('Preparé equipos y materiales',`c${c.n}a`)}${check('Probé la demostración',`c${c.n}b`)}${check('Preparé la evidencia',`c${c.n}c`)}</div></div><div class="two"><div class="section"><h2>Inicio — 15 min</h2><h3>Qué decir</h3><div class="callout">“${c.c}”</div><h3>Pregunta inicial</h3><p>¿Qué problema de una red cotidiana se parece a lo que veremos hoy?</p></div><div class="section"><h2>Distribución sugerida</h2><table><tr><td>Activación</td><td>15 min</td></tr><tr><td>Teoría</td><td>30 min</td></tr><tr><td>Demostración</td><td>45 min</td></tr><tr><td>Práctica</td><td>90 min</td></tr><tr><td>Cierre</td><td>30 min</td></tr></table></div></div><div class="section"><h2>Desarrollo paso a paso</h2><ol class="steps"><li>Abre Packet Tracer y crea un proyecto nuevo.</li><li>Agrega los dispositivos indicados desde Network Devices y End Devices.</li><li>Conecta los equipos desde Connections usando el cable apropiado.</li><li>Configura cada equipo desde CLI, Config o Desktop.</li><li>Comprueba cada cambio con ping, ipconfig o un comando show.</li><li>Guarda el archivo como <code>Apellido_Nombre_Clase${c.n}.pkt</code>.</li></ol><h3>Topología de referencia</h3><div class="diagram">${esc(c.d)}</div>${baseCode(c)}<div class="callout good"><b>Observación docente:</b> el estudiante debe explicar qué dispositivo configura, en qué puerto, con qué dirección y qué evidencia demuestra que funciona.</div></div><div class="section"><h2>Actividad práctica</h2><p>${c.a}</p><h3>Guardar evidencia</h3><p>Solicita capturas de la topología, configuración y pruebas realizadas.</p><div class="checklist">${check('Completé la topología o montaje',`c${c.n}d`)}${check('Realicé las pruebas',`c${c.n}e`)}${check('Guardé evidencias',`c${c.n}f`)}</div></div><div class="section"><h2>¿Cómo sé que funcionó?</h2><div class="callout good">${c.v}</div><h2>Error intencional y diagnóstico</h2><p>${c.f}</p><ol class="steps"><li><b>Detectar:</b> describir exactamente qué no funciona.</li><li><b>Hipótesis:</b> cable, IP, máscara, puerto, VLAN, servicio o credenciales.</li><li><b>Comprobar:</b> utilizar LEDs, ipconfig, ping o show.</li><li><b>Corregir y repetir:</b> guardar evidencia antes y después.</li></ol></div><div class="section"><h2>Preguntas de verificación</h2><ol><li>¿Qué función cumple cada dispositivo utilizado?</li><li>¿Qué indicador demuestra que funcionó?</li><li>¿La falla es física o lógica?</li><li>¿Qué comprobarías primero?</li></ol><h2 class="teacher-only">Respuesta esperada</h2><p class="teacher-only">La explicación debe conectar síntoma, hipótesis, prueba y corrección.</p><div class="callout">Hoy no solo configuramos: aprendimos a comprobar y diagnosticar.</div></div><div class="class-nav"><button class="btn secondary" onclick="showClass(${Math.max(1,c.n-1)})">← Anterior</button><button class="btn primary" onclick="showClass(${Math.min(18,c.n+1)})">Siguiente →</button></div>`}
+
+function teacherGuide(c){
+  const guides={
+    1:'Antes de comenzar, deja una topología de ejemplo visible. Pide que primero nombren cada dispositivo y expliquen para qué sirve antes de tocar Packet Tracer. Durante la práctica, recorre los grupos preguntando “¿qué representa este enlace?” en vez de entregar directamente la respuesta.',
+    2:'Haz que los estudiantes diferencien verbalmente MAC e IPv4 antes de calcular. Revisa primero la máscara y luego la dirección de red; evita que memoricen resultados sin justificar cómo los obtuvieron.',
+    3:'Configura una PC delante del curso y verbaliza cada campo. Después deja que los estudiantes repitan el procedimiento y exige una prueba de conectividad como evidencia, no solo una captura de pantalla de la configuración.',
+    4:'Antes de configurar el router, pide que identifiquen qué red pertenece a cada interfaz y cuál será el gateway de cada PC. Al diagnosticar, obliga a revisar primero el estado de las interfaces y luego la configuración IP.',
+    5:'Conviene resolver el VLSM primero en papel o pizarra y recién después llevarlo a Packet Tracer. Revisa que el pool DHCP corresponda exactamente a la red calculada y pide que expliquen por qué algunas direcciones se excluyen.',
+    6:'Si es posible, muestra físicamente el recorrido PC → jack → patch panel → switch. Pide que cada grupo siga un cable y compruebe que la etiqueta física coincide con la documentación.',
+    7:'Antes de crimpar, haz que todos comparen el orden de colores con T568A y T568B. Supervisa especialmente el pelado, el orden de los conductores y que la chaqueta llegue al conector antes del crimpado.',
+    8:'Entrega primero el síntoma y no la solución. Pide que anoten una hipótesis, indiquen qué pines deberían observar y recién después reparen. La segunda medición debe quedar registrada como evidencia.',
+    9:'Insiste en que una instalación ordenada también es una instalación documentada. Revisa numeración, etiquetas y correspondencia entre jack, patch panel y puerto del switch.',
+    10:'Antes de configurar VLAN, pregunta qué equipos deberían poder comunicarse entre sí. Después de configurar, usa el ping como evidencia para demostrar tanto lo que funciona como lo que intencionalmente queda aislado.',
+    11:'Comprueba primero que las VLAN existan en ambos switches y después configura el trunk. Si falla la conectividad, guía el diagnóstico desde show vlan brief hacia show interfaces trunk, evitando corregirlo tú directamente.',
+    12:'Pide que los estudiantes registren varias redes vecinas y no elijan canal solo por intuición. La justificación debe relacionar canal, señal e interferencia.',
+    13:'Haz la configuración desde el panel real del AP si está disponible. Después verifica desde un cliente que el SSID cambió y que la administración quedó en el estado esperado.',
+    14:'Aclara la diferencia entre autenticación y cifrado. Usa credenciales de prueba y pide que el estudiante explique qué sucede cuando la clave es incorrecta antes de volver a conectarse.',
+    15:'Registra las MAC antes de aplicar el filtro. Luego prueba un cliente autorizado y otro no autorizado, documentando ambos resultados para que el control no quede reducido a “funciona/no funciona”.',
+    16:'Primero realiza una prueba sin aislamiento y luego otra con aislamiento. Esto permite que los estudiantes comparen el comportamiento y comprendan qué problema resuelve cada función.',
+    17:'Explica el recorrido de autenticación cliente → AP → RADIUS. Verifica por separado conectividad IP, configuración del AP y credenciales/secretos para que el diagnóstico tenga una secuencia clara.',
+    18:'Usa la evaluación como una auditoría: primero observar y registrar, después priorizar riesgos, aplicar mejoras y finalmente demostrar el cambio. Pide que cada mejora tenga una evidencia “antes/después” y una justificación.'
+  };
+  return guides[c.n] || 'Acompaña la actividad con preguntas de diagnóstico, solicita evidencias y procura que el estudiante explique el motivo de cada configuración.';
+}
+
+function classPage(c){return `<div class="class-head"><h1>CLASE ${c.n} — ${c.t}</h1><div class="meta"><span class="pill">${c.ra}</span><span class="pill">4 horas</span><span class="pill">Guía paso a paso</span></div><p><b>Objetivo:</b> ${c.o}</p></div><div class="section"><h2>¿Qué aprenderán?</h2><p>${c.c}</p><h2>¿Qué necesito antes de comenzar?</h2><p>${c.m}</p><h2>Preparación del profesor</h2><ol class="steps"><li>Prueba la actividad completa y guarda una copia limpia.</li><li>Prepara equipos, material, proyector y carpeta de evidencias.</li><li>Escribe el objetivo, la topología y la convención de nombres.</li></ol><div class="checklist">${check('Preparé equipos y materiales',`c${c.n}a`)}${check('Probé la demostración',`c${c.n}b`)}${check('Preparé la evidencia',`c${c.n}c`)}</div></div><div class="two"><div class="section"><h2>Inicio — 15 min</h2><h3>Qué decir</h3><div class="callout">“${c.c}”</div><h3>Pregunta inicial</h3><p>¿Qué problema de una red cotidiana se parece a lo que veremos hoy?</p></div><div class="section"><h2>Distribución sugerida</h2><div class="table-wrap"><table><tr><td>Activación</td><td>15 min</td></tr><tr><td>Teoría</td><td>30 min</td></tr><tr><td>Demostración</td><td>45 min</td></tr><tr><td>Práctica</td><td>90 min</td></tr><tr><td>Cierre</td><td>30 min</td></tr></table></div></div><div class="section"><h2>Desarrollo paso a paso</h2><ol class="steps"><li>Abre Packet Tracer y crea un proyecto nuevo.</li><li>Agrega los dispositivos indicados desde Network Devices y End Devices.</li><li>Conecta los equipos desde Connections usando el cable apropiado.</li><li>Configura cada equipo desde CLI, Config o Desktop.</li><li>Comprueba cada cambio con ping, ipconfig o un comando show.</li><li>Guarda el archivo como <code>Apellido_Nombre_Clase${c.n}.pkt</code>.</li></ol><h3>Topología de referencia</h3><div class="diagram">${esc(c.d)}</div>${baseCode(c)}<div class="callout good"><b>Observación docente:</b> el estudiante debe explicar qué dispositivo configura, en qué puerto, con qué dirección y qué evidencia demuestra que funciona.</div></div><div class="section teacher-tip teacher-only"><h2>Orientación particular para el docente</h2><p>${teacherGuide(c)}</p><h3>Durante la clase, procura</h3><ol class="steps"><li>Demostrar una vez y luego dejar que el estudiante ejecute.</li><li>Preguntar primero por la hipótesis antes de indicar la solución.</li><li>Exigir una evidencia concreta de cada logro.</li><li>Registrar errores frecuentes para retomarlos en el cierre.</li></ol></div><div class="section"><h2>Actividad práctica</h2><p>${c.a}</p><h3>Guardar evidencia</h3><p>Solicita capturas de la topología, configuración y pruebas realizadas.</p><div class="checklist">${check('Completé la topología o montaje',`c${c.n}d`)}${check('Realicé las pruebas',`c${c.n}e`)}${check('Guardé evidencias',`c${c.n}f`)}</div></div><div class="section"><h2>¿Cómo sé que funcionó?</h2><div class="callout good">${c.v}</div><h2>Error intencional y diagnóstico</h2><p>${c.f}</p><ol class="steps"><li><b>Detectar:</b> describir exactamente qué no funciona.</li><li><b>Hipótesis:</b> cable, IP, máscara, puerto, VLAN, servicio o credenciales.</li><li><b>Comprobar:</b> utilizar LEDs, ipconfig, ping o show.</li><li><b>Corregir y repetir:</b> guardar evidencia antes y después.</li></ol></div><div class="section"><h2>Preguntas de verificación</h2><ol><li>¿Qué función cumple cada dispositivo utilizado?</li><li>¿Qué indicador demuestra que funcionó?</li><li>¿La falla es física o lógica?</li><li>¿Qué comprobarías primero?</li></ol><h2 class="teacher-only">Respuesta esperada</h2><p class="teacher-only">La explicación debe conectar síntoma, hipótesis, prueba y corrección.</p><div class="callout">Hoy no solo configuramos: aprendimos a comprobar y diagnosticar.</div></div><div class="class-nav"><button class="btn secondary" onclick="showClass(${Math.max(1,c.n-1)})">← Anterior</button><button class="btn primary" onclick="showClass(${Math.min(18,c.n+1)})">Siguiente →</button></div>`}
 function home(){return `<div class="hero"><h1>GUÍA DOCENTE DE REDES</h1><p>TNS en Tecnologías Digitales y Ciberseguridad · manual práctico para enseñar, demostrar y evaluar.</p></div><div class="stats"><div class="stat"><strong>18</strong><span>Clases</span></div><div class="stat"><strong>4 h</strong><span>Por clase</span></div><div class="stat"><strong>3</strong><span>Resultados de aprendizaje</span></div><div class="stat"><strong>3</strong><span>Evaluaciones</span></div></div><div class="grid"><div class="card ra1"><h3>RA1 · Redes e IPv4</h3><p>Clases 1–5: direccionamiento, subredes, router, DHCP y diagnóstico.</p><button class="btn primary" onclick="showClass(1)">Entrar</button></div><div class="card ra2"><h3>RA2 · Cableado y switching</h3><p>Clases 6–11: UTP, tester, rack, VLAN y trunk.</p><button class="btn primary" onclick="showClass(6)">Entrar</button></div><div class="card ra3"><h3>RA3 · Wi‑Fi y seguridad</h3><p>Clases 12–18: AP, WPA, control de acceso, RADIUS y hardening.</p><button class="btn primary" onclick="showClass(12)">Entrar</button></div></div><div class="section"><h2>Ruta rápida para preparar una clase</h2><ol class="steps"><li>Selecciona una clase en el menú.</li><li>Marca la checklist de preparación.</li><li>Realiza la demostración antes de entregar la práctica.</li><li>Introduce una falla controlada.</li><li>Solicita evidencias y guarda la pauta.</li></ol></div>`}
-function tools(){return `<div class="section"><h2>Packet Tracer desde cero</h2><p>Simulador educativo para representar dispositivos, puertos, cables y comandos básicos.</p><ol class="steps"><li>Abre Packet Tracer y selecciona File → New.</li><li>Agrega routers, switches y PCs desde la barra inferior.</li><li>Conecta los equipos desde Connections.</li><li>Configura las PCs en Desktop → IP Configuration.</li><li>Configura routers y switches desde CLI.</li><li>Comprueba con ipconfig, ping, tracert y comandos show.</li><li>Guarda el proyecto usando File → Save As.</li></ol><h3>Comandos esenciales</h3>${code('ipconfig\nping 192.168.1.1\ntracert 192.168.2.10')}<h2>Comandos Packet Tracer</h2><table><tr><th>Comando</th><th>Función</th></tr>${commands.map(x=>`<tr><td>${code(x)}</td><td>${commandInfo(x)}</td></tr>`).join('')}</table></div>`}
+function tools(){return `<div class="section"><h2>Packet Tracer desde cero</h2><p>Simulador educativo para representar dispositivos, puertos, cables y comandos básicos.</p><ol class="steps"><li>Abre Packet Tracer y selecciona File → New.</li><li>Agrega routers, switches y PCs desde la barra inferior.</li><li>Conecta los equipos desde Connections.</li><li>Configura las PCs en Desktop → IP Configuration.</li><li>Configura routers y switches desde CLI.</li><li>Comprueba con ipconfig, ping, tracert y comandos show.</li><li>Guarda el proyecto usando File → Save As.</li></ol><h3>Comandos esenciales</h3>${code('ipconfig\nping 192.168.1.1\ntracert 192.168.2.10')}<h2>Comandos Packet Tracer</h2><div class="table-wrap"><table><tr><th>Comando</th><th>Función</th></tr>${commands.map(x=>`<tr><td>${code(x)}</td><td>${commandInfo(x)}</td></tr>`).join('')}</table></div></div>`}
 function commandInfo(x){return ({'enable':'Entrar al modo privilegiado.','configure terminal':'Entrar a configuración global.','show running-config':'Ver la configuración activa.','show ip interface brief':'Revisar estado e IP de interfaces.','show vlan brief':'Ver VLAN y puertos.','show interfaces trunk':'Ver trunks activos.','show ip route':'Ver rutas conocidas.','show arp':'Ver asociaciones IP-MAC.','copy running-config startup-config':'Guardar la configuración.'})[x]||''}
-function evaluations(){return `<div class="section"><h2>Evaluaciones</h2><div class="card ra1"><h3>Evaluación 1 · RA1</h3><p>Diseñar VLSM, configurar router y DHCP, demostrar ping/tracert y diagnosticar una falla.</p></div><div class="card ra2"><h3>Evaluación 2 · RA2</h3><p>Fabricar cable, obtener PASS en tester, crear VLAN10/20 y trunk 802.1Q.</p></div><div class="card ra3"><h3>Evaluación 3 · RA3</h3><p>Auditar AP: SSID, canal, WPA2/WPA3, WPS, MAC, Guest, Isolation y RADIUS.</p></div><h3>Criterios comunes</h3><table><tr><th>Criterio</th><th>Ponderación</th></tr><tr><td>Configuración técnica</td><td>35%</td></tr><tr><td>Diagnóstico y justificación</td><td>25%</td></tr><tr><td>Evidencias</td><td>20%</td></tr><tr><td>Orden y seguridad</td><td>20%</td></tr></table></div>`}
+function evaluations(){return `<div class="section"><h2>Evaluaciones</h2><div class="card ra1"><h3>Evaluación 1 · RA1</h3><p>Diseñar VLSM, configurar router y DHCP, demostrar ping/tracert y diagnosticar una falla.</p></div><div class="card ra2"><h3>Evaluación 2 · RA2</h3><p>Fabricar cable, obtener PASS en tester, crear VLAN10/20 y trunk 802.1Q.</p></div><div class="card ra3"><h3>Evaluación 3 · RA3</h3><p>Auditar AP: SSID, canal, WPA2/WPA3, WPS, MAC, Guest, Isolation y RADIUS.</p></div><h3>Criterios comunes</h3><div class="table-wrap"><table><tr><th>Criterio</th><th>Ponderación</th></tr><tr><td>Configuración técnica</td><td>35%</td></tr><tr><td>Diagnóstico y justificación</td><td>25%</td></tr><tr><td>Evidencias</td><td>20%</td></tr><tr><td>Orden y seguridad</td><td>20%</td></tr></table></div></div>`}
 function checklist(){let xs=['Packet Tracer instalado','Computadores funcionando','Switches disponibles','Routers disponibles','AP disponibles','Cable UTP','RJ-45','Crimpadora','Tester','Patch Panel','Rack','Analizador Wi-Fi','Servidor RADIUS','Material de evaluación'];return `<div class="section"><h2>Checklist general del profesor</h2><p>Las marcas se guardan automáticamente en este navegador.</p><div class="checklist">${xs.map((x,i)=>check(x,'general'+i)).join('')}</div></div>`}
 function renderNav(){let groups=[['home','Inicio'],['ra1','RA1 · Redes e IPv4'],['ra2','RA2 · Cableado y switching'],['ra3','RA3 · Wi‑Fi y seguridad'],['all','Todas las clases'],['eval','Evaluaciones'],['tools','Packet Tracer y herramientas'],['check','Checklist']];document.getElementById('nav').innerHTML='<div class="nav-title">Navegación</div>'+groups.map(x=>`<button data-nav="${x[0]}" onclick="navigate('${x[0]}')">${x[1]}</button>`).join('')+'<div class="nav-title">Clases</div>'+classes.map(c=>`<button onclick="showClass(${c.n})">Clase ${c.n} · ${c.t.split(':')[0]}</button>`).join('')}
 function loadChecks(){document.querySelectorAll('[data-check]').forEach(i=>{i.checked=localStorage.getItem(i.dataset.check)==='1';i.onchange=()=>localStorage.setItem(i.dataset.check,i.checked?'1':'0')})}
-function navigate(x){document.querySelectorAll('[data-nav]').forEach(b=>b.classList.toggle('active',b.dataset.nav===x));let title=x==='home'?'Inicio':x==='tools'?'Packet Tracer y herramientas':x==='check'?'Checklist':x==='eval'?'Evaluaciones':'Contenido';document.getElementById('pageTitle').textContent=title;let out=x==='home'?home():x==='tools'?tools():x==='eval'?evaluations():x==='check'?checklist():x==='all'?classes.map(c=>`<div class="card"><h3>Clase ${c.n} — ${c.t}</h3><p>${c.ra}</p><button class="btn primary" onclick="showClass(${c.n})">Abrir clase</button></div>`).join(''):classes.filter(c=>c.ra.toLowerCase()===x).map(c=>`<div class="card"><h3>Clase ${c.n} — ${c.t}</h3><p>${c.o}</p><button class="btn primary" onclick="showClass(${c.n})">Abrir clase</button></div>`).join('');document.getElementById('content').innerHTML=out||'<div class="empty">No hay resultados.</div>';loadChecks();window.scrollTo(0,0)}
-function showClass(n){let c=classes.find(x=>x.n===Number(n));document.getElementById('pageTitle').textContent='Clase '+n;document.getElementById('content').innerHTML=classPage(c);document.querySelectorAll('[data-nav]').forEach(b=>b.classList.remove('active'));loadChecks();window.scrollTo(0,0)}
+function closeNav(){document.body.classList.remove('nav-open')}
+function toggleNav(){document.body.classList.toggle('nav-open')}
+function navigate(x){closeNav();closeNav();document.querySelectorAll('[data-nav]').forEach(b=>b.classList.toggle('active',b.dataset.nav===x));let title=x==='home'?'Inicio':x==='tools'?'Packet Tracer y herramientas':x==='check'?'Checklist':x==='eval'?'Evaluaciones':'Contenido';document.getElementById('pageTitle').textContent=title;let out=x==='home'?home():x==='tools'?tools():x==='eval'?evaluations():x==='check'?checklist():x==='all'?classes.map(c=>`<div class="card"><h3>Clase ${c.n} — ${c.t}</h3><p>${c.ra}</p><button class="btn primary" onclick="showClass(${c.n})">Abrir clase</button></div>`).join(''):classes.filter(c=>c.ra.toLowerCase()===x).map(c=>`<div class="card"><h3>Clase ${c.n} — ${c.t}</h3><p>${c.o}</p><button class="btn primary" onclick="showClass(${c.n})">Abrir clase</button></div>`).join('');document.getElementById('content').innerHTML=out||'<div class="empty">No hay resultados.</div>';loadChecks();window.scrollTo(0,0)}
+function showClass(n){closeNav();let c=classes.find(x=>x.n===Number(n));document.getElementById('pageTitle').textContent='Clase '+n;document.getElementById('content').innerHTML=classPage(c);document.querySelectorAll('[data-nav]').forEach(b=>b.classList.remove('active'));loadChecks();window.scrollTo(0,0)}
 function copyCode(btn){let text=[...btn.parentElement.childNodes].filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.textContent).join('').trim();navigator.clipboard.writeText(text);btn.textContent='COPIADO';setTimeout(()=>btn.textContent='COPIAR',1200)}
 document.getElementById('modeBtn').onclick=()=>{document.body.classList.toggle('student-mode');let on=document.body.classList.contains('student-mode');document.getElementById('modeBtn').textContent=on?'Modo profesor':'Modo estudiante'};
 document.getElementById('search').oninput=e=>{let q=e.target.value.toLowerCase().trim();if(!q){navigate('home');return}let hits=classes.filter(c=>Object.values(c).join(' ').toLowerCase().includes(q));document.getElementById('pageTitle').textContent='Resultados de búsqueda';document.getElementById('content').innerHTML=hits.length?hits.map(c=>`<div class="card"><h3>Clase ${c.n} — ${c.t}</h3><p>${c.ra} · Coincidencia encontrada</p><button class="btn primary" onclick="showClass(${c.n})">Abrir clase</button></div>`).join(''):'<div class="empty">No se encontraron coincidencias.</div>'};
